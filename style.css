@@ -12,6 +12,22 @@ header{
 h1{
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
+    line-height: 1.4;
+}
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+button:hover{
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+p{
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 0 1rem;
 }
 .try{
     padding: 7px 10px;
@@ -20,7 +36,7 @@ h1{
     border-radius: 10px;
 }
 .container img{
-    width: 250px;
+    max-width: 250px;
 }
 .container{
     display: flex;
@@ -28,17 +44,20 @@ h1{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    max-width: 1200px;
 }
 @media (min-width:1024px) {
     .try{
         padding: 14px 39px;
-        box-shadow: rgba(0, 0, 0, 2);
+        font-size: 1.1rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
     .container{
         flex-direction: row;
         text-align: initial;
+        margin: 0 auto;
     }
     .container img{
-        width: 450px;
+        max-width: 450px;
     }
 }
