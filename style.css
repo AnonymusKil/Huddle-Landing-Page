@@ -1,66 +1,93 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
-h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: bolder;
-    line-height: 1.4;
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  line-height: 1.4;
 }
-button{
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease,transform 0.3s ease;
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-button:hover{
-    background-color: darkblue;
-    transform: scale(1.05);
+button:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
 }
-p{
-    line-height: 1.5;
-    font-size: 1rem;
-    padding: 0 1rem;
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0 1rem;
 }
-.try{
-    padding: 7px 10px;
-    border: none;
-    color: blue;
-    border-radius: 10px;
+.try {
+  padding: 7px 10px;
+  border: none;
+  color: blue;
+  border-radius: 10px;
 }
-.container img{
-    max-width: 250px;
+.container img {
+  max-width: 250px;
 }
-.container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 1200px;
+.container-header {
+  background-image: url(huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-mobile.svg);
+  /* background-size: cover;
+    background-position: center top; */
+  /* padding: 2rem 1rem; */
+  align-items: center;
+  background-position: center top;
+  padding: 2rem 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: var(--clr-neutral-very-pale-cyan); */
+  /* background-image: url("../images/bg-hero-mobile.svg"); */
 }
-.get-started{
-    margin-top: 1rem;
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px;
 }
-@media (min-width:1024px) {
-    .try{
-        padding: 14px 39px;
-        font-size: 1.1rem;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .container{
-        flex-direction: row;
-        text-align: initial;
-        margin: 0 auto;
-    }
-    .container img{
-        max-width: 450px;
-    }
+.get-started {
+  margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+  .try {
+    padding: 14px 39px;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    flex-direction: row;
+    text-align: initial;
+    margin: 0 auto;
+  }
+  .container img {
+    max-width: 450px;
+  }
+  .container {
+    /* padding: 4rem 10rem 8rem 10rem; */
+    background-position: 0;
+  }
+  /* .container-header {
+    background-image: url(huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+    background-size: cover;
+    padding: 2rem;
+  } */
+   .container-header{
+    background-repeat: no-repeat;
+  background-position: 0 -10rem;
+  background-size: cover;
+   }
 }
