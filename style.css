@@ -189,6 +189,9 @@ footer{
     color: white;
   }
 }
+.info{
+  word-break: break-word;
+}
 @media (min-width: 1024px) {
   .try {
     padding: 14px 39px;
